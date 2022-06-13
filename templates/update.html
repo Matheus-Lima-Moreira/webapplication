@@ -32,11 +32,11 @@
         <div class="container">
             <div class="row">
                 <form action="/updateAction/{{movie['id']}}" method="POST">         
-                    <div class="form-group">
+                    <div class="form-group mt-2">
                         <label for="id" class="form-label">Id</label>
                         <input type="text" id="id" name="id" class="form-control" placeholder="" value="{{movie['id']}}" required readonly/>
                     </div>                             
-                    <div class="form-group">
+                    <div class="form-group mt-2">
                         <label for="nome" class="form-label">Nome</label>
                         <input type="text" id="nome" name="nome" class="form-control" placeholder="" value="{{movie['nome']}}" required/>
                     </div>
@@ -48,10 +48,21 @@
                         <label for="data" class="form-label">Data</label>
                         <input type="text" name="data" class="form-control" placeholder="" value="{{movie['data']}}" required/>
                     </div>                                     
+                    <a href="/movies"> <button type="button" class="btn btn-warning" style="margin-top: 20px">Voltar</button> </a>
                     <button class="btn btn-success" id="btn-cadastro-filme" style="margin-top: 20px">Alterar</button>
                 </form>
             </div>
         </div>
     </section>
+
+    <footer class=" py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        </div>
+    </footer>
+
 </body>
 </html>

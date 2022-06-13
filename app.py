@@ -6,6 +6,7 @@ import csv
 
 app = Flask(__name__)
 
+# feature for login not complete
 teste = [{'id': uuid4(), 'email': 'matheus@gmail.com', 'senha': '1234'}]
 with open('csv/login.csv','wt') as file_out:
     writer = csv.DictWriter(file_out, ['id', 'email', 'senha'])
@@ -93,5 +94,3 @@ def updateAction(id):
     return redirect(url_for('movies'))
 
 app.run(debug=True)
-
-# Implementar o update (rota para mostrar os dados no form e outra para salvar os dados)

@@ -1,3 +1,3 @@
-document.getElementById('email').addEventListener('input', function(){
+document.getElementById('btn-cadastro-filme').addEventListener('click', function(){
     console.log('teste');
 });

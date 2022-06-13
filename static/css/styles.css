@@ -11,13 +11,20 @@ nav{
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 900;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)!important;
 }
 
 nav ul li a:hover {
-    color: rgb(243, 247, 247);
+    color: rgb(255, 255, 255);
 }
 
 .nav-link{
     color: rgb(255, 255, 255)!important;
+}
+
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
 }
